@@ -45,7 +45,7 @@ end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   holiday_hash[season][holiday_name] = supply_array
-  holiday_hash
+  
   
   # holiday_hash[season] = {holiday_name => supply_array}
   # holiday_hash
@@ -80,7 +80,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.map do |holiday, item|
       holiday if item.include?("BBQ")
     end 
-    binding.pry
+   
   end.flatten.compact
 end
 
